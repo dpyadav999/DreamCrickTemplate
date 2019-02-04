@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dream24</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">        
+        <link href="css/jquery.multilevelpushmenu.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/responsive.css" rel="stylesheet" type="text/css">    
+        <link href="css/pnotify.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link href="css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />   
+        <link href="css/slider-menu.jquery.css" rel="stylesheet">
+        <link href="css/slider-menu.theme.jquery.css" rel="stylesheet">
+    </head>
+    <body ng-controller="mainController">
+        
+<!--headerstart--> 
+<header>
+    <div class="container-fluid">
+        <!--mobile-menu-->
+        <div class="mobile-header">
+			
+            <div id="main">
+                <span style="cursor:pointer" onclick="openNav()"><i class="fas fa-bars"></i></span>
+            </div>
+            <a href="Dashboard">
+                <img class="mobile-logo" src="images/logo.png" alt="Dream24">
+            </a>
+            <div class="user_info">
+                <div id="usernav" class="usersidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="usercloseNav()">&times;</a>
+                    <ul>
+                        <li>
+                            <h6 class="user-name-mob">testuser</h6>
+                        </li>
+                        <li><i class="fas fa-university"></i> Bank Information</li>
+                        <li>
+                            <h6>Available Credit: <span class="user_bal_mob Wallet">0.00</span></h6>
+                            <h6>Credit Limit: <span class="user_bal_mob FreeChip"></strong>0.00</span></h6>
+                            <h6>Winnings: <span class="user_bal_mob Chip" style="color: red">0.00</span></h6>
+                            <h6>Net Exposure: <span class="user_bal_mob UserLiability">0</span></h6>
+                        </li>
+						
+						<li><a id="editUsrStake" href="" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-edit"></i>Edit stakes</a></li>
+
+                    </ul>
+                </div>
+                <div id="usermain">
+                    <div class="user_right_tab" style="cursor:pointer" onclick="useropenNav()"> 
+                        <span><i class="fas fa-user"></i></span>
+                        <span class="user_bet_digit " id="Wallet" >0.00</span>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-12">			  
+                <Marquee>Welcome to Dream24. | Note: Fake bets ki len den nai hogi. Happy betting. </Marquee> 
+            </div>
+			
+        </div>
+        <!--mobile-menu-->
+        <div class="row desktop-header">
+			<div class="col-md-12" >		  
+                <Marquee>Welcome to Dream24. | Note: Fake bets ki len den nai hogi. Happy betting. </Marquee> 
+            </div>
+            <div class="col-md-2 col-sm-2 logo-area">
+                <div class="logo">
+                    <a href="Dashboard">
+                        <img src="images/logo.png" alt="Dream24">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-3">
+                <div class="clock">
+                    <span id='ct' ></span>
+                    <time id="dt" timestamp="timestamp" type="simpleDate" class="ng-binding ng-isolate-scope">Jan 25,2019</time>
+                    <time id="tm" timestamp="timestamp" type="time" class="time ng-binding ng-isolate-scope">12:58:40</time>
+                    <span class="ng-binding">+05:30 <i class="apl-icon-angle-down"></i></span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="search_panel">
+                    <div class="form-group">
+                        <div class="icon-addon addon-lg">
+                            <input type="text" placeholder="Search Events" class="form-control" id="email">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 login_panel-sec">
+                <div class="login_detial">
+                    <p class="ng-binding">Logged in as testuser</p>
+                    <p class="last-login ng-binding">Last logged in: 
+                        01/01/1970 05:30</p>
+                </div>
+				<div class="dropdown">
+                    <a href="" class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cog"></i> Account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#bethistory">My Bets</a>
+                        <a class="dropdown-item" href="#profitloss">Profit and Loss</a>
+                        <a class="dropdown-item" href="#Statement">Account Statement</a>
+                        <a class="dropdown-item" href="#Chiphistory">Transfer Statement</a>
+                        <a class="dropdown-item" href="#changepassword">Change Password</a>
+                    </div>
+                    <a href="login.html" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--headerEnd-->        <div class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <!--menuleft-->
+<div class="col-md-2 col-sm-3">
+    <div class="slider sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <ul class="my-menu">
+            <li class="my_markt">
+                <a href="Mymarket">
+                    <img src="images/fav-star-icon.png" alt="icon" />
+                    <span>My Market</span>
+                </a>
+            </li>
+            <li>
+                <a href="user/dashboard?Favorite=1">
+                    <img src="images/fav-star-icon.png" alt="icon" />
+                    <span>Favourites</span>
+                </a>
+            </li>
+            <li id="cricketLi" class="cricket">
+                <a href="javascript:void(0);" onclick="filterSport('4',0)">
+                    <img src="images/cricket-icon.png" alt="icon">
+                    <span>Cricket</span>
+                </a>  
+                            </li>
+            <li class="tennis">
+                <a href="javascript:void(0);" onclick="filterSport('2',0)">
+                    <img src="images/tenish-icon.png" alt="icon">
+                    <span>Tennis</span>
+                </a>    
+                            </li>
+            <li class="football">
+                <a href="javascript:void(0);" onclick="filterSport('1',0)">
+                    <img src="images/soccer-icon.png" alt="icon">
+                    <span>Football</span>
+                </a>  
+                            </li>                                
+        </ul>        
+    </div>
+</div>
+
+<ng-view>
+
+<!--menuleft-->
+                    <!--tableodds-->	
+<!-- <div class="col-md-7 col-sm-6 clearfix" id="UpCommingData">
+    </div>
+<div id="MatchOddInfo">
+</div> -->
+
+<!--tableodds-->	
+<!--right-aside-->
+
+
+</ng-view>
+<div id="fancyposition" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Fancy Position</h4>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+</div>
+<!--right-aside-->     
+                </div>
+            </div>
+        </div>
+        <div id="toggle_tst">
+	<ul>
+		<li><a href="bethistory"><i class="fas fa-list-ul"></i>Open Bets</a></li>
+		<li><a href="profitloss"><i class="far fa-money-bill-alt"></i>Betting P & L</a></li>
+		<li><a href="Chiphistory"><i class="fas fa-exchange-alt"></i>Transfer Statement</a></li>
+		<li><a href=""><i class="far fa-clock"></i>Time Setting</a></li>
+		<li><a href="changepassword"><i class="fas fa-lock"></i>Change Password</a></li>
+		<li><a href="" data-toggle="modal" data-target="#exampleModal2"><i class="fas fa-clipboard"></i>Rule & Regulations</a></li>
+		<li class="click_bet"><a href=""><i class="fas fa-bullseye"></i>1 Click Bet Setting</a></li>
+		
+		<li><a href="user/logout"><i class="fas fa-sign-out-alt"></i>Sign Out</a></li>
+	</ul>
+</div>
+
+
+<footer>
+	<div class="footer-menu">
+		<ul>
+			<li>
+				<a href="Dashboard?inplay"><i class="fas fa-home"></i><span>   Home</span></a>
+			</li>
+			<li>				
+			<a href="Dashboard"  class="active"> <i class="fas fa-basketball-ball"></i> <span>Matches</span></a>				
+			</li>
+			<li>
+			<a href="Mymarket"><i class="fas fa-chart-line"></i><span>My Market </span></a>
+			</li>
+			<li>
+			<a href="#"><i class="fas fa-file-alt"></i><span>News</span> </a>
+			</li>
+			<li>
+			<a id="show_hide"><i class="far fa-user-circle"></i><span>Account</span> </a>
+			</li>
+		</ul>
+	</div>
+
+
+    <div class="footer_inner">
+        <a href="#"  data-toggle="modal" data-target="#exampleModal2">Rules & Regulations</a>
+        <span>© 2016-2018</span>
+        <div class="powered-by">  | <span class="powered-logo"></span></div>
+    </div>
+</footer>
+
+<div class="my_market-view">
+    <a href="Mymarket"><i class="fas fa-eye"></i></a>
+</div>
+<!--betpopup-->	
+<div class="bet_slip-modal">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form id="userStakeUpdate" method="post" class="form-inline">
+                <div class="modal-content">
+                    <div id="resMsg"></div>
+                    <input type="hidden"  name="ChipUserID" id="ChipUserID" value="">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                        </button>
+                        <h6>Edit Stakes</h6>
+                    </div>                        
+                    <div class="modal-body">
+                        <ul>
+                            <li><input type="number" required name="Name1" id="Name1" placeholder="Name1"/></li>
+                            <li><input type="number" required name="Name2" id="Name2" placeholder="Name2"/></li>
+                            <li><input type="number" required name="Name3" id="Name3" placeholder="Name3"/></li>
+                            <li><input type="number" required name="Name4" id="Name4" placeholder="Name4"/></li>
+                            <li><input type="number" required name="Name5" id="Name5" placeholder="Name5"/></li>
+                            <li><input type="number" required name="Name6" id="Name6" placeholder="Name6"/></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" id="updateUserStake">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--betpopup-->
+<!--RULES AND REGULATIONS popup-->	
+<div class="rules_regulation-modal">
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <h1>THE SITE RULES AND REGULATIONS</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="intro">
+                        <h3>PART A - INTRODUCTION</h3>
+                        <h4>1. Use and interpretation</h4>
+                        <p>These Rules and Regulations ("<b>Rules</b>") are part of the Site's <span></span>terms and conditions.</p>
+                        <p>The Rules apply to all bets placed on this online betting platform ("<b>Site</b>"). The Rules consist of the following:</p>
+                        <ul>
+                            <li>This INTRODUCTION section (Part A);</li>
+                            <li>The GENERAL RULES (set out in Part B below); and</li>
+                            <li>The SPECIFIC SPORTS RULES (set out in Part C below - these apply to certain sports).</li>
+                        </ul>
+                        <p>The General Rules apply to all bets unless stated otherwise in the Specific Sports Rules. If there is any inconsistency between the Specific Sports Rules and the General Rules, the Specific Sports Rules shall prevail.</p>
+                        <p>The rules governing how markets are offered, managed and/or settled are not the same for every market on each product. In certain circumstances, a bet that is settled as a winner on one product may be settled as a loser on the other product (and vice versa). Additionally, different settlement rules may apply so that, for example, bets that are a winner on one product may be settled as a dead heat or be voided on the other product. Customers must ensure that they familiarise themselves with the relevant rules that apply to the bets that they place on the Site.</p>
+                        <h4>2. Customer responsibility</h4>
+                        <ul>
+                            <li>Customers should make themselves aware of all of the Rules affecting any market on which they wish to place a bet.</li>
+                            <li>In particular, customers who use the "one-click" option to place bets are solely responsible for their actions and the Site shall have no liability to such customers for any errors made by customers when using this option.</li>
+                        </ul>
+                        <h3>PART B - GENERAL RULES</h3>
+                        <h4>Matters beyond the Site's reasonable control and malfunctions</h4>
+                        <p>The Site is not liable for any loss or damage you may suffer because of any: act of God; power cut; trade or labour dispute; act, failure or omission of any government or authority; obstruction or failure of telecommunication services; or any other delay or failure caused by a third party or otherwise outside of our control. In such an event, the Site reserves the right to cancel or suspend access to the Site without incurring any liability.</p>
+                        <p>The Site is not liable for the failure of any equipment or software howsoever caused, wherever located or administered, or whether under its direct control or not, that may prevent the operation of the Site.</p>
+                        <p>In the event of a technological failure or error which is apparent to the customer, the customer is obliged to notify the Site of such failure/error immediately. If the customer continues to place a bet in these circumstances, they shall take reasonable action to minimise any potential loss. In the absence of such action, the Site reserves the right to void a bet.</p>
+                        <p>The Site reserves the right in its absolute discretion to restrict access to the Site, or withhold funds or void any bets outstanding to a customer’s account in its absolute discretion in the event of a technological failure or other malfunction which affects the integrity of the Site whether this is under its direct control or otherwise. Customers will be notified on the Site of any such malfunction which may operate to prevent the placing of further bets or which may result in outstanding bets being voided.</p>
+                        <h4>Managing markets In-Play</h4>
+                        <h5>General</h5>
+                        <ul>
+                            <li>If a market is not scheduled to be turned in-play but the Site fails to suspend the market at the relevant time, then:</li>
+                            <ul>
+                                <li>if the event has a scheduled 'off' time, all bets matched after that scheduled off time will be void; and</li>
+                                <li>if the event does not have a scheduled 'off' time, the Site will use its reasonable endeavours to ascertain the time of the actual 'off' and all bets after the time of the 'off' determined by the Site will be void.</li>
+                            </ul>
+                            <li>The Site aims to use its reasonable endeavours to suspend in-play markets at the start of and at the end of the event. However, the Site does not guarantee that such markets will be suspended at the relevant time.</li>
+                            <li>Customers are responsible for managing their in-play bets at all times.</li>
+                            <li>For the purposes of in-play betting, customers should be aware that transmissions described as "live" by some broadcasters may actually be delayed or pre-recorded. The extent of any delay may vary depending on the set-up through which they are receiving pictures or data.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--RULES AND REGULATIONSpopup -->
+<script>
+    var userId1 =5053;
+    var userType1 =3;
+    var acceptTerms = 'N';
+    var site_url = '';
+    var isOneClickBeting = '0';
+    var isFav = '1';
+    var ParmesMarketId = '0';
+    var userId = 5053;
+    var userType = 3;
+    var MarketId = '0';
+    var matchId = 0;
+    if (isFav === 1) {
+        var favMAtches = JSON.parse('[]');
+    }
+</script>    
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-route.js"></script>
+
+
+ <script src="js/app.js"></script>
+<!-- script src="assets/user/js/jquery-3.2.1.min.js"></script -->
+<script src="js/slider-menu.jquery.min.js"></script>
+<script src="js/jquery.multilevelpushmenu.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/uisearch.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/moment.min.js"></script> 
+<script src="js/daterangepicker.js"></script>  
+<script src="js/pnotify.js"></script>
+<script src="js/user-custom.js"></script>
+
+<!-- <script src="assets/user/js/user-main.js"></script>  -->
+
+
+
+<script>
+   $(document).ready(function() {
+     $("#show_hide").click(function () {
+     $("#toggle_tst").toggle()
+  });
+  
+  });
+</script>    </body>
+</html>

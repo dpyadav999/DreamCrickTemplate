@@ -1,0 +1,63 @@
+<div class="col-md-10 col-sm-9">
+    <div class="sports-wrapper">
+        <h1 class="sports_name">Bet History</h1>
+        <form method="get" id="target" class="form-horizontal form-label-left input_mask"> 
+            <input type="hidden" name="user_id" value="5053">
+            <input type="hidden" name="user_type" value="3">
+            <div class="prifit_loss-table">
+                <ul>                    
+                    <li>
+                        <div class="input-group">
+                            <label for="formGroupExampleInput">From</label>
+                            <input type="text" name="from_date" value="" id="from-date" class="form-control" placeholder="From date">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group">
+                            <label for="formGroupExampleInput">To</label>
+                            <input type="text" name="to_date" value="" id="to-date" class="form-control" placeholder="To date">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group">
+                            <label for="formGroupExampleInput">Search</label>
+                            <select name="type" class="form-control col-md-7 col-xs-12 dropd">
+<option value="1" selected="selected">Match Entry</option>
+<option value="2">Commission</option>
+<option value="3">Entry</option>
+<option value="4">FreeChip</option>
+<option value="5">Profit&amp;Loss</option>
+</select>
+                        </div>
+                    </li>                               
+                    <li>
+                        <button type="submit" id="form_submit"><i class="fas fa-search"></i>Search</button>
+                        <button type="button" onclick="clearSearch('http://dream24.bet/report/chip_history')">Clear</button>
+                        <button type="button" onclick="window.location.href='http://dream24.bet/report/ac_statement?user_id=5053'">View Ledger</button>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <div class="table-responsive sports-tabel">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th class="">S.No. </th>
+                        <th class="">Narration </th>
+                        <th class="">Date </th>
+                        <th class="">Credit </th>
+                        <th class="">Debit </th>
+                        <th class="">Balance </th>
+                        <th class="">Id </th>
+                    </tr>
+                </thead>
+                <tbody>
+                     
+                        <tr><th colspan="6">No record found</th></tr>	
+                </tbody>
+            </table>
+            
+            <p class="pagination-row dataTables_paginate paging_simple_numbers"> </p>
+        </div>
+    </div>
+</div>

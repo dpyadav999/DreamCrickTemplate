@@ -1,0 +1,833 @@
+@media (min-width:1201px) and (max-width:1800px) {}
+
+@media (min-width:1000px) and (max-width:1200px) {
+	
+		#menu{
+	width: 160px !important;
+	min-width:160px !important;
+	}
+	
+.multilevelpushmenu_wrapper{
+	width: 160px!important;
+	min-width:160px !important;
+}
+
+.multilevelpushmenu_wrapper .ltr{
+	width: 160px !important;
+	min-width:160px !important;}	
+	
+	.container-fluid {
+		max-width: inherit
+	}
+	.bet-slip .nav>li a {
+		padding: 10px !important;
+	}
+	header .dropdown-toggle,
+	.logout {
+		margin: 0px 5px;
+	}
+	.multilevelpushmenu_wrapper a {
+		padding: 15px 10px;
+	}
+	.multilevelpushmenu_wrapper h2>img,
+	.multilevelpushmenu_wrapper a>img {
+		width: 15px;
+		margin-right: 0px;
+	}
+	.info-field {
+		width: 30% !important;
+	}
+	.first-row,
+	.second-row {
+		display: inherit;
+	}
+	.first-row button {
+		margin-bottom: 2px;
+		padding: 5px 8px;
+	}
+	.second-row button {
+		margin-bottom: 2px;
+		padding: 5px 8px;
+	}
+}
+
+@media (min-width:768px) and (max-width:999px) {
+	.col-xs-1,
+	.col-sm-1,
+	.col-md-1,
+	.col-lg-1,
+	.col-xs-2,
+	.col-sm-2,
+	.col-md-2,
+	.col-lg-2,
+	.col-xs-3,
+	.col-sm-3,
+	.col-md-3,
+	.col-lg-3,
+	.col-xs-4,
+	.col-sm-4,
+	.col-md-4,
+	.col-lg-4,
+	.col-xs-5,
+	.col-sm-5,
+	.col-md-5,
+	.col-lg-5,
+	.col-xs-6,
+	.col-sm-6,
+	.col-md-6,
+	.col-lg-6,
+	.col-xs-7,
+	.col-sm-7,
+	.col-md-7,
+	.col-lg-7,
+	.col-xs-8,
+	.col-sm-8,
+	.col-md-8,
+	.col-lg-8,
+	.col-xs-9,
+	.col-sm-9,
+	.col-md-9,
+	.col-lg-9,
+	.col-xs-10,
+	.col-sm-10,
+	.col-md-10,
+	.col-lg-10,
+	.col-xs-11,
+	.col-sm-11,
+	.col-md-11,
+	.col-lg-11,
+	.col-xs-12,
+	.col-sm-12,
+	.col-md-12,
+	.col-lg-12 {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	
+	
+	#menu{
+	width: 180px !important;
+	min-width:180px !important;
+	}
+	
+.multilevelpushmenu_wrapper{
+	width: 180px!important;
+	min-width:180px !important;
+}
+
+.multilevelpushmenu_wrapper .ltr{
+	width: 180px !important;
+	min-width:180px !important;}	
+	
+	
+	.logo{width:100% !important}
+	
+	
+	.clock > time.time{font-size:13px;}
+	
+	.match_icon {
+		display: none;
+	}
+	.sidenav a {
+		font-size: 12px !important;
+	}
+	.market-listing-table>tbody>tr>td i {
+		font-size: 12px;
+		width: 18px;
+	}
+	.container-fluid {
+		max-width: inherit
+	}
+	.bet-slip .nav>li a {
+		padding: 10px 5px !important;
+	}
+	.bet-slip .nav li:last-child a {
+		padding: 7px 3px !important;
+	}
+	.sports_name {
+		font-size: 15px;
+	}
+	.ng-scope {
+		display: none;
+	}
+	.market-listing-table>tbody>tr>td.back.unhighlighted {
+		display: none;
+	}
+	.market-listing-table>tbody>tr>td.lay.unhighlighted {
+		display: none;
+	}
+	.market-listing-table tbody tr>td.odds-placeholder {
+		display: none;
+	}
+	.market-listing-table>tbody>tr>td.empty {
+		display: none;
+	}
+	.multilevelpushmenu_wrapper h2>img,
+	.multilevelpushmenu_wrapper a>img {
+		margin-right: 0px;
+	}
+	.first-row,
+	.second-row {
+		display: inherit;
+	}
+	.bet-fields .form-group {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.first-row button {
+		margin-bottom: 2px;
+		padding: 5px 20px;
+	}
+	.second-row button {
+		margin-bottom: 2px;
+		padding: 5px 20px;
+	}
+	header .dropdown-toggle,
+	.logout {
+		margin: 0 1px;
+	}
+	.last-login {
+		display: none;
+	}
+	.icon-addon {
+		margin-top: 0px
+	}
+	.logo {
+		margin-top: 2px;
+	}
+	.clock {
+		margin-top: 0px;
+	}
+	.login_detial {
+		margin-top: 7px;
+	}
+	header .dropdown {
+		margin-top: 7px;
+	}
+	.balance-box .panel-heading {
+		text-align: left;
+	}
+}
+
+@media (max-width: 767px) {
+	.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #240927;
+    overflow-x: hidden;
+    transition: 2s;
+    padding-top: 60px;
+}
+.bet-slip{display:none;}
+ .sports_name span{display:none;}
+	
+	#mobiletab { margin-top: 50px;}
+
+.right_score, .left_score{width:100%;color:#fff;}
+#scoreMob{width: 100%;    margin-top: 5px;	}
+.matchs-heading h3{font-size:14px;}
+.score_row ul li{margin-left:0px; margin-right:5px; text-align:left;}
+.score_row ul li:last-child{width:34%;}
+.score_row ul li p {color:#000; margin-bottom:5px;}
+.score_row ul li span{color:#000;}
+.left_score span {color:#000;}
+.socre_table tbody>tr>td {color:#000;}
+.score_comantry_list li{color:#000;}
+.score_area_new{ border:none;}	
+
+
+ 
+
+.score_area_new .balance-panel-body{display:none;}
+	
+#menu{
+	width: 100% !important;
+	min-width:100% !important;
+	}
+	
+.multilevelpushmenu_wrapper{
+	width: 100% !important;
+	min-width:100% !important;
+}
+
+.multilevelpushmenu_wrapper .ltr{
+	width: 100% !important;
+	min-width:100% !important;}	
+	
+	.ui-pnotify{width:95% !important;right:0 !important;margin:0px 10px !important;border:none !important;}
+	
+	.second_txt .match_names{font-size:12px;}
+	
+	.apl-table{position: relative !important;}
+	
+	.ball-msg-box{
+	font-weight: bold;
+    background: #fff;
+    opacity: 0.8;
+    height: 100%;
+    width: 39%;
+    top: 0px;
+    right: 0;
+    position: absolute;
+    text-align: center;
+	}
+	
+	.ball-msg-box h1{position:absolute;font-size:15px;right:24%;font-weight:bold;bottom:5px}
+	
+	.rules_regulation-modal p{margin-left:0px;}
+	
+	.rules_regulation-modal h4{margin:10px 0px;}
+	
+	.rules_regulation-modal h3{margin:10px 0px;}
+
+	
+	.table-responsive{border:solid 1px transparent;}
+	
+	.match_icon {
+		display: block;
+	}
+	.open_bets-table thead {
+		display: none;
+	}
+	.open_bets-table tbody tr td {
+		display: none;
+	}
+	.open_bets-table tbody tr td:first-child {
+		display: block !important;
+		border: none;
+	}
+	.open_bets-table tbody>tr>td a {
+		color: #000;
+		font-weight: 600;
+		font-size: 15px;
+	}
+	.open_bets-table tbody>tr {
+		border-bottom: solid 1px #ddd;
+	}
+	.open_bets-table .ng-scope {
+		display: block;
+		float: left;
+		padding-left: 28px;
+	}
+	#UpCommingData .sports_name {
+		padding: 5px 10px;
+	}
+	.open_bets-table .fa-star {
+		display: none;
+	}
+	.open_bets-table img {
+    display: inline-block;
+    float: left;
+    width: 17px;
+    margin-right: 8px;
+    margin-top: 4px;
+	}
+	.sports_name span {
+		margin-top: 0px;
+	}
+	#UpCommingData {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.sidenav {
+		padding-top: 50px;
+	}
+	.my_market-view {
+		display: block;
+		position: fixed;
+		right: 15px;
+		bottom: 10px;
+		z-index: 10000;
+	}
+	.balance-box {
+		margin-bottom: 8px;
+	}
+	.tabel-btn a {
+		font-size: 12px;
+		padding: 3px 10px;
+	}
+	.bet_mob ._align-center,
+	.bet_mob.market-listing-table>thead>tr>th {
+		text-align: inherit !important;
+	}
+	.multilevelpushmenu_wrapper .ltr {
+		border: none !important;
+	}
+	.my_markt {
+		display: none;
+	}
+	.my_market-view i {
+		background: #1f5058;
+		color: #fff;
+		border-radius: 100%;
+		padding: 15px 14px;
+		width: 50px;
+		font-size: 20px;
+		height: 50px;
+	}
+	#mobiletab .tab-content {
+		margin-top: 50px;
+	}
+	#mobiletab .nav-pills {display: block;margin-top: 50px;background: #0f2327;margin: 0px -5px;padding: 0;display: flex;overflow-x: auto;scroll-behavior: smooth;list-style: none;}
+	#mobiletab .nav-pills li{float: left;-webkit-box-flex: 1;-ms-flex-positive: 1;flex-grow: 1;text-align: center;}
+	#mobiletab .nav-pills>li.active>a,
+	#mobiletab .nav-pills>li.active>a:hover,
+	#mobiletab .nav-pills>li.active>a:focus {
+		background: transparent;
+		color: #fff
+	}
+	#mobiletab .nav>li>a:hover,
+	#mobiletab .nav>li>a:focus {
+		background: transparent
+	}
+	#mobiletab .nav>li>a {
+		color: #f1c548;
+		text-transform: uppercase;
+		padding: 10px 14px;
+	}
+	#bettypinfo {
+		display: none;
+	}
+	#betslip #ShowRunnderName {
+		display: none;
+	}
+	
+	#betslip .btn-danger,
+	.placebet {
+		width: 49%;
+		padding: 6px 10px !important;
+	}
+	#menuMob .multilevelpushmenu_wrapper {
+		left: 0 !important;
+		right: 0 !important;
+		width: 100% !important;
+	}
+	.team_pic {
+		width: 100%;
+		float: left;
+		margin: 5px 0px;
+		border-bottom:solid 1px #c5c3c3;
+		padding:10px 0px;
+	}
+	.bet {
+		padding: 5px 5px 5px 5px;
+	}
+	hr {
+		display: none;
+	}
+	.tab-wrapper {
+		margin-top: 0px !important;
+	}
+	.bet_mob {
+		width: 100%;
+		display: table;
+	}
+	.bet_mob .title {
+		width: 67%;
+		/*float: left;*/
+	}
+	
+	.bet-mobile {
+		width: 100%;
+		display: table;
+		margin: 1px 0px;
+	}
+	table>tbody>.bet-mobile>td:first-child {
+		text-align: left;
+	}
+	.bal_box {
+		display: none;
+		width: 100%;
+		float: left;
+	}
+	.btn-toggle.btn-lg {
+		display: none !important;
+	}
+	.prifit_loss-table .input-group {
+		display: block;
+	}
+	.login-form .login-panel {
+		margin-top: 30%;
+	}
+	.sports-tabel h5 {
+		margin: 10px;
+	}
+	footer {
+		display: none;
+	}
+	.bet_slip-modal .modal-body ul li {
+		max-width: 80px;
+	}
+	.modal-header .close {
+		font-size: 18px;
+	}
+	.first-row {
+		margin-bottom: 4px;
+	}
+	.first-row button {
+		padding: 2px 18px;
+		width: 60px
+	}
+	.stake-field .form-control {
+		border: solid 1px #ccc !important;
+	}
+	.bet-fields .form-control {
+		height: 30px;
+		margin-bottom: 0px;
+	}
+	.bet-fields .form-group {
+		margin-bottom: 0px;
+	}
+	.six-stakes {
+		padding: 5px;
+	}
+	.second-row button {
+		padding: 2px 8px;
+		width: 60px;
+	}
+	.tabel-scroll {
+		overflow-x: auto;
+		z-index: 1;
+		position: relative;
+	}
+	.table-responsive {
+		z-index: 1;
+		position: relative;
+	}
+	.clock {
+		display: none;
+	}
+	.logo img {
+		width: 50%;
+	}
+	.login_detial {
+		display: none;
+	}
+	header .dropdown {
+		display: none;
+	}
+	.search_panel {
+		display: none;
+	}
+	#mySidenav22 {
+		display: none;
+	}
+	.container-fluid {
+		max-width: inherit
+	}
+	.sidenav .closebtn {
+		display: block;
+	}
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		background-color: #fff;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+		border-right: solid 1px #eee;
+	}
+	.sidenav ul {
+		padding-left: 0px;
+	}
+	.sidenav ul li {
+		list-style: none;
+		border-bottom: solid 1px rgba(0, 0, 0, 0.08);
+	}
+	.sidenav ul li a {
+		padding: 10px;
+		text-decoration: none;
+		font-size: 14px;
+		display: block;
+		transition: 0.3s;
+	}
+	.sidenav a:hover {
+		color: #000;
+	}
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+		color: #000;
+		z-index: 1;
+	}
+	.sidenav .closebtn:hover {
+		text-decoration: none;
+	}
+	.usersidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+		color: #000;
+	}
+	#main {
+		transition: margin-left .5s;
+		padding: 11px 0px;
+		display: inline-block;
+		position: absolute;
+		left: 10px;
+	}
+	#main span i {
+		color: #fff;
+		font-size: 20px;
+	}
+	.mobile-logo {
+		max-width: 40%;
+		height: 30px;
+		float: left;
+		margin-top: 4px;
+		margin-left: 25px;
+	}
+	.desktop-header {
+		display: none;
+	}
+	#main span {
+		padding-right: 10px;
+	}
+	header {
+		padding: 8px 0px;
+		position: fixed;
+		z-index: 100;
+		width: 100%;
+	}
+	.mobile-header {
+		display: block;
+	}
+	.sports-wrapper {
+		padding: 0px;
+		margin-top:55px;
+	}
+	.sports_name {
+		font-size: 13px;
+		font-weight: 600;
+		margin: 5px 0px;
+	}
+	.ng-scope {
+		display: none;
+	}
+	.market-listing-table>tbody>tr>td.back.unhighlighted {
+		display: none;
+	}
+	.market-listing-table>tbody>tr>td.lay.unhighlighted {
+		display: none;
+	}
+	.market-listing-table tbody tr>td.odds-placeholder {
+		display: none;
+	}
+	.market-listing-table>tbody>tr>td.empty {
+		display: none;
+	}
+	.footer_inner {
+		font-size: 10px;
+                display: none;
+	}
+        .apl-table tbody>tr td:first-child{width:auto;}
+        
+	.prifit_loss-table ul li {
+		width: 100%;
+		padding-right: 0px;
+	}
+	.prifit_loss-table ul li button {
+		margin-top: 10px;
+	}
+	.prifit_loss-table {
+		margin: 0px 0px;
+		width: 100%;
+		float: left;
+	}
+	.event-name {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		width: 80%;
+		display: block;
+		line-height: 23px;
+	}
+	.bet_slip-modal .modal-dialog {
+		margin-left: 10px;
+		margin-top: 10px;
+		max-width: inherit;
+		max-height: inherit;
+	}
+	.rules_regulation-modal .modal-dialog {
+		width: inherit;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	.rules_regulation-modal h1 {
+		font-size: 14px;
+	}
+	.rules_regulation-modal ul {
+		padding: 10px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.mobile-logo {
+		width: 40%;
+		float: left;
+		margin-top: 5px;
+		margin-left: 25px;
+	}
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+@media (min-width:1201px) and (max-width:1800px){
+}
+ @media (min-width:1000px) and (max-width:1200px){
+     .container-fluid{width:inherit}
+	 .fixed-table-container thead th.login .sortable {background-position: right;}
+	 .fixed-table-container thead th.cricket .sortable {background-position: 70px;width: 130px;}
+	 .event input{padding: 23px 8px;}
+	 .event input {width: 175px;}
+	 .betlist .dropdown .btn {width: 175px;}
+	
+	 .right_side-table{overflow-x:hidden !important;}
+	 .login_detial p{font-size:11px;}
+.clock, .logo {margin-top:5px !important;}
+header .dropdown{margin-top:10px !important;}
+.login_detial{margin-top:0px !important;}
+     
+}
+ @media (min-width:768px) and (max-width:999px) {
+     .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{padding-right: 5px;padding-left: 5px;}
+	
+.container-fluid{width:inherit}
+header .dropdown{margin-top: 7px;}
+	 .tablogin_detial{display:none !important;}
+	.clock{margin-top:0 !important;}
+     .desktop-heade .col-sm-8{padding:0px 5px !important;}
+	  .right_side-table{overflow-x:hidden !important;}
+	  .betlist .dropdown .btn {  width: 180px;}
+	   .fixed-table-container thead th.login .sortable {background-position: right;}
+	 .fixed-table-container thead th.cricket .sortable {background-position: 70px;width: 130px;}
+	 .memberinfo .pb {
+    margin-bottom: 10px;
+    padding: 0;
+}
+}
+ @media (max-width: 767px) {
+.balance-panel-body{overflow-x:scroll;}
+.footer-menu{display:block}
+.my_market-view{display:none;}	
+.col-10-pdding {padding-right: 6px;padding-left: 6px;} 
+.apl-section {margin: 5px 0 0 0;padding: 5px;}
+.balance {padding: 5px 10px;margin-top: 5px;}
+.main{position: relative;margin-top: 20px;}
+#sidebar{display:none;}	
+header{padding:8px 0px;position:fixed;z-index:100;width:100%; background:#000; }
+.switch {width: 50px;height: 20px;}
+.slider:before {height: 18px;width: 18px;left: 0px;}
+input:checked + .slider:before {-webkit-transform: translateX(33px);-ms-transform: translateX(33px);transform: translateX(33px);}
+.balance dd, .balance dt, .balance dl {line-height: 30px;}
+.agency-settings{line-height:30px;     float: left;}
+.apl-section h1{font-size:20px; /*width:auto;*/}
+.tabing .nav > li > a {padding: 5px 15px !important;}
+#exTab1 .tab-content {padding: 15px 5px;}
+.prifit_loss-table .input-group .form-control {width: 100%;     height: 30px;}
+.prifit_loss-table label {margin: 6px 0px;}
+.prifit_loss-table .input-group {padding: 0px 3px;}
+.prifit_loss-table ul li button {font-size: 12px; line-height: 0px;margin: 10px 0px;padding: 5px 10px;}
+.event input {width: 190px;}
+.betlist .odds {width: 190px !important;}
+.betbutton {margin: 10px 0px;}
+.betticker .betbutton{margin: 0px 0px;}
+.betticker .refresh {margin: 10px 0px;}	
+.tabelhight .pull-right.search {margin-left: 8px;}
+.fixed-table-container thead th.cricket .sortable {background-position: 70px;width: 130px;}
+.fixed-table-container thead th.login .sortable {background-position: right;}
+.tabelhight {min-height: auto;}
+.memberinfo .pb{margin-bottom:10px; padding:0;}
+.membermodel.editmodelpopup{padding: 0px 10px !important;}
+.editmodelpopup .modal-header .close {width: 30px;height: 30px;font-size: 26px;}
+.netexpousure h1 { width: 275px;}
+.rediobtn {margin: 10px 0px;}
+.userbutton  ul li {width: 100%;}
+.changepass.editmodelpopup .modal-header .close {right: -9px;}
+.changepass.membermodel.editmodelpopup .modal-content {width: auto !important;}
+.left-panel {width: 20%;float: left;}
+.wintabel {padding: 15px 0px;width: 80%;}
+.tabingmob.nav-pills > li {float: none;}
+.sidebartoggal{display:none;}
+.right_side-table{padding-left:0;}
+.mobpopup.editmodelpopup .modal-content {background: #26183e;width: 100%; }
+.mobpopup.editmodelpopup .modal-content .table-responsive{border:none;}
+.mobpopup.editmodelpopup{padding: 0px 10px !important;}
+.mobpopup.editmodelpopup .modal-body {padding: 15px 0px;}
+.date_range_picker .calendar {width: 295px !important;}
+footer{display:block;}
+header .dropdown {display: none;}
+#menu{display:none;}
+.container-fluid{width:inherit}
+.sidenav {height: 100%;width: 0;position: fixed;z-index: 1;top: 0;left: 0;background: #fff;overflow-x: hidden;transition: 0.5s;padding-top: 60px;    z-index: 9999;}
+.sidenav ul{padding-left:0px;}
+.sidenav ul li{list-style:none;}
+.sidenav ul li a {padding:10px;text-decoration: none;font-size: 14px;color: #000;display: block;transition: 0.3s; font-weight: normal;}
+.sidenav a:hover {color: #cccccc;}
+.sidenav .closebtn {position: absolute;top: 0;left: -40px;font-size: 36px;margin-left: 50px;color:#000;}
+.sidenav ul li a img {margin: 0px 10px 0px 0;}
+.sidenav .closebtn:hover{text-decoration:none;}
+.sidenav ul li a span {font-size: 16px;}
+.slider-menu a span::before {content: '' !important;}
+.usersidenav .closebtn {position: absolute;top: 0;right: 25px;font-size: 36px;margin-left: 50px;color:#000;text-decoration:none;}
+#main {transition: margin-left .5s;padding: 9px 0px;display:inline-block;position: absolute;left: 10px;}
+#main span i{color:#fff;font-size:20px;}
+.mobile-logo{max-width:40%;height:30px;float:left;margin-top: 4px;margin-left: 25px;}
+.desktop-header{display:none;}
+#main span{padding-right: 10px;}
+.mobile-header{display:block;}
+.editmodelpopup .modal-dialog {margin: 10% auto;}
+     
+}
+
+
+
+/*responsive-css-Start*/
+
+ @media screen and (max-height: 450px) {
+	 
+ .sidenav {padding-top: 15px;}
+ .sidenav a {font-size: 18px;}
+ 
+}
+ 
+
+ @media only screen and (max-width: 380px)
+ {
+	.betlist .odds {width: 175px !important;
+}
+.betlist .dropdown .btn {width: 175px;} 
+.event input {width: 175px;}
+	 
+ }
+ @media only screen and (max-width: 350px) {
+.mobile-logo{width:40%;float:left;margin-top: 4px;margin-left: 25px;}
+
+	
+}
+
+@media only screen and (max-width: 350px) 
+{
+	.event input {width: 147px;}
+	.betlist .dropdown .btn {width: 147px;}
+	.betlist .odds {width: 147px !important;}
+	
+}
+
+/*responsive-css-End*/

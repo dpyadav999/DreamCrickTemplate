@@ -1,0 +1,66 @@
+<div class="col-md-10 col-sm-9">
+    <div class="sports-wrapper">
+        <h1 class="sports_name">Betting Profit and Loss</h1>
+        <form method="get" id="target" class="form-horizontal form-label-left input_mask"> 
+            <div class="prifit_loss-table">
+                <ul>
+                    <li>
+                        <input type="hidden" name="user_id" value="">
+                        <label for="formGroupExampleInput">Sport</label>
+                        <select class="form-control" name="sportid">
+                            <option value="4" selected="">Cricket</option>
+                            <option value="1">Soccer</option>
+                            <option value="2">Tennis</option>
+                                                        <option value="0">Fancy</option>
+                        </select>
+                    </li>
+                    <li>
+                        <div class="input-group">
+                            <label for="formGroupExampleInput">From</label>
+                            <input type="text" name="from_date" value="" id="from-date" class="form-control" placeholder="From date">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group">
+                            <label for="formGroupExampleInput">To</label>
+                            <input type="text" name="to_date" value="" id="to-date" class="form-control" placeholder="To date">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group">
+                            <label for="formGroupExampleInput">Event</label>
+                            <input type="text" class="form-control" placeholder="Via event name" name="searchTerm" value="">
+                        </div>
+                    </li>                                
+                    <li>
+                        <button type="submit" id="form_submit"><i class="fas fa-search"></i>Search</button>
+                        <button type="button" onclick="clearSearch('http://dream24.bet/report/profitloss')">Clear</button>
+                    </li>
+                </ul>
+            </div>
+        </form>
+                    <div class="table-responsive sports-tabel">
+                <h5>Total P&amp;L : <span>0.00</span></h5>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th class="">S.No. </th>
+                            <th class="">Event Name </th>
+                            <th class="">Market </th>
+                            <th class="">P_L </th>
+                            <th class="">Commission </th>
+                            <th class="">Created On </th>
+                            <th class="">Action </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                         
+                        <tr><th colspan="8">No record found</th></tr>	
+                    </tbody>
+                </table>
+                
+                <p class="pagination-row dataTables_paginate paging_simple_numbers"> </p>
+            </div>
+                <!--end of .table-responsive-->
+    </div>
+</div>
